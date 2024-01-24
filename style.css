@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(217, 54%, 11%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Figtree', sans-serif;
+    height: 100vh;
+    
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding:1rem;
+    margin-bottom: 1rem;
+    width:300px;  
+} 
+.equili-img{
+    border-radius: 10px;
+}
+
+.img-container:hover{
+    cursor: pointer;  
+} 
+
+.img-container{
+    position: relative; 
+    background-color: hsl(178, 100%, 50%);
+    width:270px;
+    height: 270px;
+    border-radius: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.img-container:hover .equili-img{
+    filter: blur(10px); 
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.equili{
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 200px;
+    padding-right: 10px;
+}
+.equili:hover{
+   color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.equili-para{
+    margin-top: 14px;
+    font-weight: 300;
+    font-size: 16px;
+    color: hsl(215, 32%, 27%);
+}
+.eth-day{
+    margin-top: 14px;
+    display: flex;
+    padding-right: 17px;
+    align-items: flex-end;
+    gap:70px;  
+}
+.eth{
+    display: flex;
+    gap:4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(178, 100%, 50%); 
+}
+.eth > img{
+    width: 15px;
+    height: 15px;
+}
+.days{
+    display: flex; 
+    gap:4px;
+    font-size: 14px;
+    font-weight: 400;
+    color:hsl(215, 32%, 27%);
+}
+.days.img{
+    width:5px;
+    height: 5px;
+}
+.avtar{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-top: 14px;
+}
+.create-img{
+    width:35px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.create-para{
+    font-weight: 300;
+    font-size: 14px;
+    color: hsl(215, 32%, 27%);
+    word-spacing: 2px;
+}
+.jule{
+    color: hsl(0, 0%, 100%);  
+}
+.jule:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
